@@ -1,0 +1,179 @@
+.textRight {
+  text-align: right !important;
+}
+
+.mt1,
+.my1 {
+  margin-top: 0.25rem !important;
+}
+
+.tableResponsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.totalAuto {
+  text-align: left;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table th {
+  text-align: inherit;
+}
+
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.imgCar {
+  max-width: 500px;
+  margin: 25px auto;
+}
+
+.imgCar figure {
+  background: #e0e6ea; /* Цвет фона */
+  display: block; /* Блочный элемент */
+  margin: 0 10px 10px 0; /* Отступы */
+  text-align: center; /* Выравнивание по центру */
+  border-bottom: 2px solid #227eda; /* Параметры рамки */
+ }
+
+ .imgCar figure img {
+  width: 100%;
+  padding-bottom: 10px;
+ }
+
+ .imgCar figure p {
+  margin-bottom: 0; /* Отступ снизу */
+ }
+
+ .imgCar figcaption {
+  height: 25px;
+ }
+
+.listOperations {
+  margin: 25px auto;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  border-left-width: 5px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  background: #e0e6ea;
+  border-left-color: rgba(0, 0, 0, 0.1);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: black;
+  font-size: 18px;
+}
+
+.listOperations dt {
+  color: #561d1d;
+  float: left;
+  width: auto;
+  clear: left;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.dateOperation {
+  border: 3px dashed #ccc;
+  box-shadow: 0 0 0 1px #ccc, inset 0 0 0 1px #ccc;
+  color: floralwhite;
+  padding: 0 8px;
+  float: right;
+  background: #227eda;
+  text-align: center;
+  line-height: 0.3;
+}
+
+.lastOperation {
+  color: floralwhite;
+}
+
+.lastOperationBlock {
+  width: 80%;
+  max-width: 550px;
+  margin: 2em auto;
+  padding: 1em;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.stolenNot {
+  background: green;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.stolenYes {
+  background: red;
+}
+
+.textCenter {
+  text-align: center!important;
+  margin-top: 1rem!important;
+}
+
+.number {
+  display: inline-flex;
+  border: 3px solid #484848;
+  font-size: 3.2rem;
+  border-radius: 5px;
+  width: auto;
+}
+
+.numberFlag {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #2860ab;
+  color: white;
+  padding: 9px 0 6px;
+  align-items: center;
+  width: 50px;
+}
+
+.numberFlagIcon {
+  width: 32px;
+}
+
+.numberFlagBlue {
+  background: #3a75c4;
+  height: 10px;
+}
+
+.numberFlagYellow {
+  background: #f9dd16;
+  height: 10px;
+}
+
+.numberCountry {
+  font-size: 1.4rem;
+  padding-top: 12px;
+}
+
+.numberText {
+  padding: 7px 50px;
+  flex-grow: 3;
+}

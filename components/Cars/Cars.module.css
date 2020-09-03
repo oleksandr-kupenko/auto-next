@@ -1,0 +1,120 @@
+.containerFluid h2, .containerFluid h3 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    display: block;
+}
+
+.containerFluid h2 {
+    font-size: 2rem;
+}
+
+.containerFluid h3 {
+    font-size: 1.25rem;
+}
+
+.containerFluid ul {
+    height: 1px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style-type: disc;
+    line-height: 1.5em;
+}
+
+.containerFluid li {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+.containerFluid {
+    padding: 1rem;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 1140px;
+} 
+.catalogModels {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.catalogModel {
+    display: inline-block;
+    padding-bottom: 1rem!important;
+}
+
+.catalogModelCard {
+    width: 238px;
+    margin: 14px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.catalogModelCardLink {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.cardImgTop {
+    width: 236px;
+    height: 177px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.cardImgTop img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.cardBody {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.cardTitle{
+    margin-bottom: .75rem;
+    font-size: 1.25rem;
+}
+
+.cardTitle a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.my2 {
+    margin: .5rem!important;
+}
+
+.containerColumns3 {
+    column-count: 3;
+    column-width: 200px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.count {
+    color: #bdbaba;
+}

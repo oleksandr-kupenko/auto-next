@@ -1,0 +1,65 @@
+.catalogModelInfo *, .catalogModelInfo ::after, .catalogModelInfo ::before {
+    box-sizing: border-box;
+}
+
+.catalogModelInfo h3 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 1.5em;
+}
+
+.catalogModelInfo ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.catalogModelInfo {
+    max-width: 1140px;
+}
+
+.flexColumn {
+    justify-content: space-between!important;
+    flex-direction: row!important;
+}
+
+.colText {
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.colImg {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: right!important;
+    justify-content: flex-end!important;
+    display: flex!important;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.imgContainer {
+    width: 236px;
+    text-align: center!important;
+    box-sizing: border-box;
+}
+
+.imgContainer img {
+    width: 100%;
+    border-radius: .25rem!important;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.description {
+    line-height: 1.5;
+    text-align: justify;
+    padding: 15px 0;
+}

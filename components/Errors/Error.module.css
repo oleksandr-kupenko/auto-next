@@ -1,0 +1,17 @@
+.resultText {
+    margin: 20px 0 50px;
+    padding: 10px 15px;
+    line-height: 1.5;
+    border: solid #bdd7f1;
+}
+
+.resultText h2 {
+    text-align: center;
+}
+
+.number {
+    color: red;
+    border: solid red;
+    padding: 2px;
+}
+

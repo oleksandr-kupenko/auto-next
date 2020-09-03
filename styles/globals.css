@@ -1,0 +1,103 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.containerMain {
+  margin-top: 1.5rem;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  display: block;
+}
+
+.container h1,
+.container h2,
+.container h3
+ {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  margin-left: 0.5rem;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .containerMain {
+    max-width: 540px;
+  }
+  .resultBlock {
+    width: 98%;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerMain {
+    max-width: 720px;
+  }
+  .resultBlock {
+    width: 95%;
+  }
+}
+
+@media (min-width: 992px) {
+  .containerMain {
+    max-width: 960px;
+  }
+  .resultBlock {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .containerMain {
+    max-width: 1140px;
+  }
+  .resultBlock {
+    width: 75%;
+  }
+}
+
+.resultBlock {
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+

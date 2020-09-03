@@ -1,0 +1,46 @@
+.inputBlock {
+    display: contents;
+}
+
+.inputBlock input {
+    width: 68%;
+    background: #fff;
+    text-transform: uppercase;
+    border: 0;
+    color: #555;
+    font-size: 30px;
+    border-radius: 2px 0 0 2px;
+    padding: 1% 4px;
+    margin: 0;
+    letter-spacing: 10px;
+    font-family: Arial;
+    line-height: 43px;
+}
+
+@media(max-width: 650px) {
+    .inputBlock input {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+}
+
+@media(max-width: 560px) {
+    .inputBlock input::placeholder {
+        font-size: 20px !important;
+    }
+    .inputBlock input {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+}
+
+.error input {
+    border: solid 2px red;
+    width: calc(68% - 4px);
+    padding: calc(1% - 2px) 4px;
+    background-color: lightpink;
+}
+
+.errorText {
+    color: white;
+}

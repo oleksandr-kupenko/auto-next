@@ -1,0 +1,80 @@
+.containerWide {
+    width: 100%;
+}
+
+.headerTop {
+    position: fixed;
+    background: rgba(1,51,102,.7);
+    z-index: 100;
+    width: 100%;
+    padding-right: 65px;
+    right: 0;
+    left: 0;
+}
+
+.headerLogo {
+    float: left;
+    width: 15%;
+    padding: 20px 1%;
+    text-align: center;
+}
+
+.headerMenuDesktop {
+    display: inline-block;
+    float: left;
+    width: 77%;
+}
+
+
+.container-header {
+
+}
+
+.headerTop .buyReport {
+    margin: 20px 16px;
+    padding: 8px 40px;
+    color: #fff;
+    background-color: #f97f1c;
+    border: 0;
+    font-size: 16px;
+    border-radius: 3px;
+    float: right;
+    position: fixed;
+    right: 50px;
+    margin-top: 25px;
+}
+
+.headerMenuDesktop ul {
+    margin: 14px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.headerMenuDesktop ul li {
+    display: inline-block;
+    padding: 1% 2%;
+}
+
+.headerMenuDesktop ul li:first-child {
+    position: relative;
+    font-size: 20px;
+    color: white;
+}
+
+.headerMenuDesktop ul li a {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+.headerMenuDesktop ul li a {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+.headerMenuDesktop ul li:first-child a {
+    padding: 1% 2%;
+    font-size: 20px;
+    position: relative;
+}
