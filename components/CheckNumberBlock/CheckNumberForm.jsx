@@ -16,8 +16,8 @@ const CheckNumberForm = () => {
   }
 
   const handleSubmit = ({ number }) => {
-    number = withoutSpace(number);
-    if (!router.query.number || withoutSpace(router.query.number) != number) {
+    number = withoutSpace(number).toLowerCase();
+    if (!router.query.number || withoutSpace(router.query.number).toLowerCase() != number) {
       Router.push(`/number/[number]`, `/number/${number}`);
     }
   }

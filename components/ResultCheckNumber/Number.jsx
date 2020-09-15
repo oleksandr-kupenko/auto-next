@@ -14,7 +14,7 @@ const Number = ({ numberCar }) => {
                     </div>
                     <div className={s.numberCountry}>UA</div>
                 </div>
-                <div className={s.numberText}>{numberCar}</div>
+                <div className={s.numberText}>{numberCar.toUpperCase()}</div>
             </div>
         </div>
     )
