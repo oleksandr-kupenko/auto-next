@@ -164,7 +164,7 @@
   color: white;
   padding: 9px 0 6px;
   align-items: center;
-  width: 50px;
+  max-width: 20% !important;
 }
 
 .numberFlagIcon {
@@ -189,4 +189,10 @@
 .numberText {
   padding: 7px 50px;
   flex-grow: 3;
+}
+
+@media (max-width: 640px) {
+  .number {
+    font-size: calc(10vw);
+  }
 }
