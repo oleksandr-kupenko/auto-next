@@ -3,19 +3,14 @@ import CheckNumberForm from "./CheckNumberForm";
 
 const CheckBlockContainer = () => {
     return (
-        <div className={s.containerWide + ' ' + s.pageClass + ' ' + s.p1}>
             <div className={s.checkBlock}>
-                <div className={s.containerAutodna}>
                     <div className={s.carCartoon}>
-                        <img src='/front-car.png' alt=""  />
-                        <div className={s.vinForm}>
+                        <img src='/front-car.png' alt="Автомобиль"  />
+                        <div className={s.checkForm}>
                         <CheckNumberForm />
                         </div>
                     </div>
-
-                </div>
             </div>
-        </div>
     )
 }
 

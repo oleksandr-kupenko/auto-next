@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import RulesOnMain from '../components/RulesOnMain/RulesOnMain'
 import { PageLayout } from '../components/Header/PageLayout'
 

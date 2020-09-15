@@ -12,33 +12,29 @@ export function MainLayout({ children, title = 'Next app' }) {
                 <meta name="keywords" content="next, bla-bla, sandron22" />
                 <meta name="description" content="this is my next site about cheknumber" />
             </Head>
-            <nav>
-                <Link href="/"><a>Home</a></Link>
-                <Link href="/about"><a>About</a></Link>
-                <Link href="/posts"><a>Posts</a></Link>
-            </nav>
+            <div className={"logo"}>
+                <Link href="/"><a><img src="/logo.png" alt="Пробивалка" /></a></Link>
+            </div>
+
             <main>
                 <CheckBlockContainer />
 
                 {children}
                 <footer className={'footer'}>
-                    <h2>FOOTER</h2>
+                    <p>Proudly powered by Next.js</p>
                 </footer>
             </main>
             <style jsx global>{`
-        nav {
-            height: 60px;
-            left: 0;
-            top: 0;
-            right: 0;
-            background: darkblue;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+        .logo {
+            height: 65px;
+            background: #337ab7;
+            margin: 0 auto;
+            text-align: center;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
+        .logo img {
+            margin: 0 auto;
+            max-width: 100%;
+            margin-top: 2px;
         }
         }
         `}</style>

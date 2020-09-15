@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import CarsList from "./CarsList";
 import { getCarAPI } from "../../pages/api/api";
+import Preloader from "../common/Preloader/Preloader";
 
 const CarsListContainer = ({ modelsList: serverModelsList, vendorCarParam }) => {
 
@@ -13,7 +14,6 @@ const CarsListContainer = ({ modelsList: serverModelsList, vendorCarParam }) => 
             const response = await getCarAPI.byMake(vendorCarParam);
             setModelsList(response.data);
         } catch (e) {
-            console.log('error: ' + e);
             setModelsList('error');
         }
     }
@@ -24,7 +24,7 @@ const CarsListContainer = ({ modelsList: serverModelsList, vendorCarParam }) => 
 
 if (!modelsList) {
     return (
-        <p>...loadig</p>
+        <><Preloader /></>
     )
 }
 

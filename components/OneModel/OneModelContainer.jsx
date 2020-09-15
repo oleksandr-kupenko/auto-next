@@ -3,18 +3,18 @@ import NoDataOneModel from "./NoDataOneModel";
 import { useState, useEffect } from "react";
 import { getCarAPI } from "../../pages/api/api";
 import { PageLayout } from "../Header/PageLayout";
+import Preloader from "../common/Preloader/Preloader";
 
 const OneModelContainer = ({ oneModelData: serverOneModelData, vendorCarParam, modelParam }) => {
 
   const [oneModelData, setOneModelData] = useState(serverOneModelData);
-debugger
+
   useEffect(() => {
     async function load() {
       try {
         const response = await getCarAPI.byModel(vendorCarParam, modelParam);
         setOneModelData(response.data);
       } catch (e) {
-        console.log('error: ' + e);
         setOneModelData('error');
       }
     }
@@ -25,7 +25,9 @@ debugger
 
   if (!oneModelData) {
     return (
-      <p>...loadig</p>
+      <>
+      <Preloader />
+      </>
     )
   }
 

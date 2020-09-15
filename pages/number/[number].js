@@ -4,10 +4,11 @@ import { PageLayout } from "../../components/Header/PageLayout";
 import ErrorNumberBlock from "../../components/Errors/ErrorNumberBlock";
 import { getCarAPI } from "../../pages/api/api";
 import ResultCheckNumber from "../../components/ResultCheckNumber/ResultCheckNumber";
+import { withoutSpace } from "../../utils/functions";
 
 export default function Number({ props }) {
     const router = useRouter();
-    const numberCar = router.query.number.split(' ').join('');
+    const numberCar = withoutSpace(router.query.number);
 
     return (
         <PageLayout title={'История пр номеру ' + numberCar}

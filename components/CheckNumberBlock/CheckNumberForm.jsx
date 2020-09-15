@@ -1,42 +1,60 @@
 import s from "./CheckNumberBlock.module.css";
 import React from 'react';
 import { Formik, Field, ErrorMessage, Form } from 'formik';
-import { validateNumber } from "../utils/validators";
-
-const CheckNumberForm = () => (
-  <div>
-    <h1>Sign Up</h1>
-    <Formik
-      initialValues={{
-        firstName: '',
-        lastName: '',
-        email: '',
-      }}
-      onSubmit={async values => {
-        await new Promise(r => setTimeout(r, 500));
-        alert(JSON.stringify(values, null, 2));
-      }}
-    >
-      <Form>
-        <label htmlFor="firstName">First Name</label>
-        <Field id="firstName" name="firstName" placeholder="Jane" />
-
-        <label htmlFor="lastName">Last Name</label>
-        <Field id="lastName" name="lastName" placeholder="Doe" />
-
-        <label htmlFor="email">Email</label>
-        <Field
-          id="email"
-          name="email"
-          placeholder="jane@acme.com"
-          type="email"
-        />
-        <button type="submit">Submit</button>
-      </Form>
-    </Formik>
-  </div>
-);
+import { validateNumber } from "../../utils/validators";
+import Router, { useRouter } from "next/router";
+import { Arrow } from "./Arrow";
+import { withoutSpace } from "../../utils/functions";
 
 
+
+const CheckNumberForm = () => {
+  const router = useRouter();
+
+  const handleSelect = (e) => {
+    e.target.select();
+  }
+
+  const handleSubmit = ({ number }) => {
+    number = withoutSpace(number);
+    if (!router.query.number || withoutSpace(router.query.number) != number) {
+      Router.push(`/number/[number]`, `/number/${number}`);
+    }
+  }
+
+  return <Formik
+    onSubmit={handleSubmit}
+    initialValues={{ number: '' }}
+  >
+
+    {({ errors, touched, resetForm, isValid, values }) => {
+      return (
+        <Form>
+          {!values.number && <Arrow />}
+          <div className={s.numberInput}>
+            {touched && <ErrorMessage
+              component='div'
+              name='number'
+              className={s.errorBlock}
+
+            />}
+            <Field className={`${s.vinInput} ${touched && errors.number ? s.invalid : ''}`}
+              name={'number'}
+              placeholder="Номер авто"
+              validate={validateNumber}
+              onClick={handleSelect}
+            />
+
+          </div>
+          <div className={s.btnBlock}>
+            <button className={s.vinBtn} type="submit" >ПРОБИТЬ</button>
+            {values.number && <div type="button" data-title="Очистить номер" className={s.cleanBtn} onClick={() => resetForm()}>X</div>}
+          </div>
+        </Form>
+      )
+    }
+    }
+  </Formik>
+}
 
 export default CheckNumberForm;

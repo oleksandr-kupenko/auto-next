@@ -7,7 +7,7 @@ import logo from "../../assets/images/logo.svg";
 
 
 const Header = (props) => {
-  debugger  
+
     const homeIcon = <FontAwesomeIcon icon={faHome} />
     
     return (
@@ -17,19 +17,6 @@ const Header = (props) => {
             <div className={s.headerLogo}><a href="/"><img src={logo} alt="" title="Tetle logo" className={s.imgResponsive}/></a></div>
 
             <div className={s.headerMenuDesktop}>
-                    <nav>
-                        <ul>
-                            
-                           {/* <li className="first"><NavLink to="/">{homeIcon}</NavLink></li>
-                            
-                            
-                             <li><NavLink to="/">Пример отчета</NavLink></li>
-                            <li><NavLink to="/">Как проверить авто?</NavLink></li>
-                            <li><NavLink to="/">Страница 3</NavLink></li>
-                            <li><NavLink to="/">Страница 4</NavLink></li>
-                            <li className={s.last}><NavLink to="/">Справка</NavLink></li> */}
-                        </ul>
-                </nav>
             </div>
             <button className={s.buyReport}>Login</button>
         </div>

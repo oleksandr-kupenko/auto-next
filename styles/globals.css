@@ -57,6 +57,11 @@ a:hover {
   align-items: center;
 }
 
+.resultBlock {
+  min-height: 300px;
+  position: relative;
+}
+
 @media (min-width: 576px) {
   .containerMain {
     max-width: 540px;

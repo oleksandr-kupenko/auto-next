@@ -3,12 +3,14 @@ import { getCarAPI } from "../api/api";
 import { useEffect, useState } from 'react';
 import CarsList from '../../components/Cars/CarsList';
 import Custom404 from '../404';
+import Preloader from '../../components/common/Preloader/Preloader'
+import { withoutSpace } from '../../utils/functions';
 
 export default function Vendor({ modelsList: serverModelsList }) {
 
     const [modelsList, setModelsList] = useState(serverModelsList);
     const router = useRouter();
-    const vendorCarParam = router.query.vendor.split(' ').join('');
+    const vendorCarParam = withoutSpace(router.query.vendor);
 
     useEffect(() => {
         async function load() {
@@ -16,7 +18,6 @@ export default function Vendor({ modelsList: serverModelsList }) {
                 const response = await getCarAPI.byMake(vendorCarParam);
                 setModelsList(response.data);
             } catch (e) {
-                console.log('error: ' + e);
                 setModelsList('error');
             }
         }
@@ -27,7 +28,7 @@ export default function Vendor({ modelsList: serverModelsList }) {
 
     if (!modelsList) {
         return (
-            <p>...loadig</p>
+            <><Preloader /></>
         )
     }
 
