@@ -10,7 +10,7 @@ const ErrorNumberBlock = ({ errorText, numberCar }) => {
 const NotFound = ({ numberCar }) => {
     return (
       <div className={s.resultText}>
-        <h2>Не удалось найти автомобиль с номером <span className={s.number}>{numberCar}</span></h2>
+        <h2>Не удалось найти автомобиль с номером <span className={s.number}>{numberCar.toUpperCase()}</span></h2>
         <p>Возможные причины:</p>
         <ol>
             <li>Номер введен неправильно. Учтите, что пробелы роли не играют, поэтому проблема не в них.</li>
@@ -25,7 +25,7 @@ const NotFound = ({ numberCar }) => {
   const Underfined = ({ numberCar }) => {
     return (
       <div className={s.resultText}>
-        <h2>Не удалось найти автомобиль с номером <span className={s.number}>{numberCar}</span></h2>
+        <h2>Не удалось найти автомобиль с номером <span className={s.number}>{numberCar.toUpperCase()}</span></h2>
             <p>Номер введен неправильно. В украинском номере должно быть от 3 до 8 знаков.
                 При этом букв должно быть не менее 3, а цифр - не более 6-ти.Ограничений по алфавиту нет, т.е. 
                 возможно применение как латинской, так и кириллицей.
