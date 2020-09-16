@@ -1,5 +1,5 @@
 export const validateNumber = value => {
-  const letterNumber = /^[0-9a-zA-Zа-яА-Я ]+$/;
+  const letterNumber = /^[0-9a-zA-Zа-яА-ЯІіЄєЇї ]+$/;
   let error;
 
   if (!value.match(letterNumber) && value.length > 0) {
