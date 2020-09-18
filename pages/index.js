@@ -3,8 +3,7 @@ import { PageLayout } from '../components/Header/PageLayout'
 
 export default function Home() {
   return (
-    <PageLayout title={'Пробить авто по номеру'}
-        description={``}>
+    <PageLayout title={'Пробить авто по номеру'}>
       <main className={'main'}>
         
         <div className="containerMain">

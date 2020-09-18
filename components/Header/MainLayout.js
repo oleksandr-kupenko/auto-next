@@ -1,19 +1,11 @@
 import Link from "next/link";
-import Head from "next/head";
 import CheckBlockContainer from '../CheckNumberBlock/CheckBlockContainer';
 import { YMInitializer } from 'react-yandex-metrika';
 
-export function MainLayout({ children, title = 'Next app' }) {
+export function MainLayout({ children, title = 'Пробить автомобиль по номеру' }) {
 
     return (
         <>
-            <Head>
-                <meta name="google-site-verification" content="Z2Ny2pUExLTVGTunLQZ9lb5tGoDP1IkeOMle3NPO9Ec" />
-                <meta charset="utf-8" />
-                <title>{title}</title>
-                <meta name="keywords" content="next, bla-bla, sandron22" />
-                <meta name="description" content="this is my next site about cheknumber" />
-            </Head>
             <div className={"logo"}>
                 <Link href="/"><a><img src="/logo.png" alt="Пробивалка" /></a></Link>
             </div>
@@ -24,8 +16,24 @@ export function MainLayout({ children, title = 'Next app' }) {
                 {children}
                 <footer className={'footer'}>
                     <p>Proudly powered by Next.js</p>
+                    <YMInitializer accounts={[67473613]} />
+                    <div dangerouslySetInnerHTML={{
+                        __html: `<!-- Yandex.Metrika counter -->
+                                <script type="text/javascript" >
+                                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                                m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                                ym(67473613, "init", {
+                                        clickmap:true,
+                                        trackLinks:true,
+                                        accurateTrackBounce:true
+                                });
+                                </script>
+                                <noscript><div><img src="https://mc.yandex.ru/watch/67473613" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+                                <!-- /Yandex.Metrika counter -->`}} 
+                    />
                 </footer>
-                <YMInitializer accounts={[67473613]} />
             </main>
             <style jsx global>{`
         .logo {

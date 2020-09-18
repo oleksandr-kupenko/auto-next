@@ -16,7 +16,7 @@ const ResultCheckNumber = ({numberCar, operations, stolen, photoUrl, ...props}) 
     <Number numberCar={numberCar} />
       <div className={s.textCenter}>
         <span className={classNames(s.stolenNot, { [s.stolenYes]: stolen })}> {stolen ?
-          'Числится в угоне на' : 'Не числится в угоне на'} <abbr title="По данным МВД">05.08.2020</abbr></span>
+          'Числится в угоне на' : 'Не числится в угоне на'} <abbr title="По данным МВД">04.09.2020</abbr></span>
         <div className={s.imgCar}>
           <figure>
             <p><img src={photoUrl} /> </p>
