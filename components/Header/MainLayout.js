@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Head from "next/head";
-import CheckBlockContainer from '../CheckNumberBlock/CheckBlockContainer'
+import CheckBlockContainer from '../CheckNumberBlock/CheckBlockContainer';
+import { YMInitializer } from 'react-yandex-metrika';
 
 export function MainLayout({ children, title = 'Next app' }) {
 
     return (
         <>
             <Head>
+                <meta name="google-site-verification" content="Z2Ny2pUExLTVGTunLQZ9lb5tGoDP1IkeOMle3NPO9Ec" />
                 <meta charset="utf-8" />
                 <title>{title}</title>
                 <meta name="keywords" content="next, bla-bla, sandron22" />
@@ -23,6 +25,7 @@ export function MainLayout({ children, title = 'Next app' }) {
                 <footer className={'footer'}>
                     <p>Proudly powered by Next.js</p>
                 </footer>
+                <YMInitializer accounts={[67473613]} />
             </main>
             <style jsx global>{`
         .logo {
