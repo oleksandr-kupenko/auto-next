@@ -8,7 +8,7 @@ import Preloader from '../common/Preloader/Preloader';
 
 
 export default function ResultCheckNumberContainer({ history: serverHistory, numberCar }) {
-    
+
     const [history, setHistory] = useState(serverHistory)
 
     useEffect(() => {

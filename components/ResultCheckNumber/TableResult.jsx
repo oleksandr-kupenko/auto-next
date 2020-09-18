@@ -1,13 +1,9 @@
 import React from 'react';
 import s from './ResultCheckNumber.module.css'
 import Link from "next/link";
-import { withDefice } from '../../utils/functions';
+import { createParametr } from '../../utils/functions';
 
 const ResultList = (props) => {
-
-    const createParametr = (name) => {
-        return withDefice(name.toLowerCase());
-    }
 
 
     return (

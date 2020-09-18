@@ -7,7 +7,6 @@
     margin: 20px;
     position: relative;
     z-index: 10;
-    font-size: 1.1em;
   }
   
   .rules::after {
@@ -28,4 +27,5 @@
   
   .rules h2 {
     text-align: center;
+    font-size: 1.2em;
   }

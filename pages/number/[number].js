@@ -7,6 +7,7 @@ import ResultCheckNumber from "../../components/ResultCheckNumber/ResultCheckNum
 import { withoutSpace } from "../../utils/functions";
 
 export default function Number({ props }) {
+  
     const router = useRouter();
     const numberCar = withoutSpace(router.query.number);
 
@@ -36,14 +37,14 @@ Number.getInitialProps = async ({ query, req }) => {
         }
     }
     try {
-        const response = await getCarAPI.byNumber(query.number);
+        const response = await getCarAPI.byNumber(encodeURI(query.number));
         return {
             props: {
                 history: response.data
             }
         }
     } catch (e) {
-        let codeError = 'otherError';
+        let codeError = e;
         e && e.response && (codeError = '404Error')
         return {
             props: {

@@ -4,15 +4,12 @@ import ResultList from './TableResult';
 import classNames from 'classnames/bind';
 import Link from "next/link";
 import Number from './Number';
-import { withDefice } from '../../utils/functions';
+import { createParametr } from '../../utils/functions';
 
-const ResultCheckNumber = ({numberCar, operations, stolen, photoUrl}) => {
+const ResultCheckNumber = ({numberCar, operations, stolen, photoUrl, ...props}) => {
 
   const vendorLastCar = operations[0].vendor;
   const modelLastCar = operations[0].model;
-  const createParametr = (name) => {
-    return withDefice(name.toLowerCase());
-  }
 
   return (
     <>
