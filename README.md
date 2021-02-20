@@ -1,30 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# To Do List web application
 
-## Getting Started
+## What is the project
 
-First, run the development server:
+Service for checking the history of the car according to the vehicle registration plate (only Ukraine)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## What frameworks were used
+App proudly powered by [Next.js](https://nextjs.org/).js. It is a popular react framework for server side rendering of pages.
+The application is deployed on [vercel.com](https://vercel.com/), which allows to immediately respond to changes made in the GitHub repository.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How does it look like
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You can see [deployed version](https://probivalka.co.ua/) on vercel.com. 
 
-## Learn More
+### How to use it 
 
-To learn more about Next.js, take a look at the following resources:
+You can enter almost any Ukrainian vehicle registration plate in the field. For example: "АЕ0545МА" or "AP 7495 HT". And you will see the car make, model, specifications and the entire history of the vehicle registration plate.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
