@@ -1,4 +1,6 @@
-# To Do List web application
+# A very old application for checking the number of a car
+
+##Search does not work (you need to replace the api key and fix errors)
 
 ## What is the project
 
