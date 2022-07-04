@@ -10,7 +10,7 @@ The application is deployed on [vercel.com](https://vercel.com/), which allows t
 
 ## How does it look like
 
-You can see [deployed version](https://probivalka.co.ua/) on vercel.com. 
+You can see [deployed version](https://probivalka.pp.ua/) on vercel.com. 
 
 ### How to use it 
 
