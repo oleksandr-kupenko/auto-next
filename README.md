@@ -1,6 +1,10 @@
 # A very old application for checking the number of a car
 
-##Search does not work (you need to replace the api key and fix errors)
+## Attention! The language has not yet been replaced by human (now there is the language of orcs)****
+
+## The search does not work (it is necessary to replace the api key and fix errors)
+
+API: https://baza-gai.com.ua/api
 
 ## What is the project
 
