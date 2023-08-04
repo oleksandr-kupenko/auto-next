@@ -2,7 +2,7 @@ import * as axios from 'axios';
 
 const instance = axios.create({
     baseURL: 'https://baza-gai.com.ua/',
-    headers: { "Accept": "application/json"},
+    headers: { "Accept": "application/json", "X-Api-Key": 83b6fc58e4480c83320c21cca5337e55},
     'Access-Control-Allow-Origin': '*'
 })
 
